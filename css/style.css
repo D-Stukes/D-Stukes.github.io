@@ -1,0 +1,76 @@
+.introPage{
+background-image:url("../images/geoBkgrd1.jpeg");
+background-size:cover;
+}
+
+
+.navlinks{
+  display: flex;
+  font-size: 20px;
+  color: yellow;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.navLink1, .navlink2, .navlink3, .navlink4{
+  margin: 0;
+  margin-right: 100px;
+  flex-direction: row;
+  flex:1;
+}
+
+
+.navlinks a{
+    display: block;
+    color: red;
+/*    text-align: center;
+    padding: 14px 16px;*/
+    text-decoration: none;
+    background-color: black;
+}
+
+.navlinks a:hover{
+    background-color: rgb(68, 68, 34);
+    color:  white;
+}
+
+
+
+
+
+
+
+.dianeHdg{
+  margin-top: 100px;
+  padding-left:50px;
+  height: 50px;
+  width: 350px;
+
+
+}
+
+.introPic{
+background-image:url("../images/dstukes2-oval.png");
+width: 300px;
+height: 300px;
+margin-left:50px;
+background-size: cover;
+padding-bottom: 50px;
+}
+
+.dianeIntro{
+  border:black;
+  margin-left: 50px;
+  top:200px;
+  font-size: 20px;
+  height: 200px;
+  width: 500px;
+}
+
+.portfolio{
+text-align: center;
+}
+
+.myName{
+  color: bur;
+}
