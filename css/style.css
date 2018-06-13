@@ -25,10 +25,27 @@
   flex:1;
 }
 
-a:hover{
+.projectTitle{
+  font-family: arial;
+  font-size: 32px;
+}
+
+a:hover, .contactlink, .projectlink{
     /*background-color: black;*/
     opacity:5;
     color:  blue;
+    text-decoration: none;
+    text-decoration-style: none;
+    text-decoration-line: none;
+}
+
+.contactlink, .projectlink{
+  opacity:8;
+  font-weight: bolder;
+  color: black;
+/*  outline-color: blue;*/
+  /*font-size: 18px;*/
+  font-family: arial;
 }
 .main-bkgd1{
   height:100%;
@@ -168,6 +185,7 @@ a:hover{
 
 .dianeIntro{
   border:black;
+  border-radius: 25px;
   margin-left: 50px;
   top:100px;
   left:400px;
@@ -201,6 +219,7 @@ a:hover{
   width:600px;
   padding: 150px;
   font-size: 17px;
+  border-radius: 25px;
   color:black;
   background-image:url("../images/geo-building16.jpeg");
   background-repeat: no-repeat;
@@ -220,12 +239,15 @@ a:hover{
   width:800px;
   padding: 15px;
   color:black;
+  border-radius: 25px;
   border: 10px rgb(240, 242, 119, .7)float:left;;
   border-color: yellow;
   background-image:url("../images/geo-building8.jpeg");
+  opacity: .6;
   background-repeat: no-repeat;
   background-size: cover;
   display: inline;
+
 
   z-index: 10000;
   position: absolute;
@@ -291,5 +313,8 @@ text-align: center;
  }
 }
 
-
+.wrap{
+  perspective: 800px;
+  perspective-origin: 50% 100px;
+}
 
