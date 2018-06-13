@@ -42,7 +42,7 @@ a:hover{
   background-attachment: fixed;
   overflow: hidden;
 /*  background-repeat: no-repeat;
-*/  background-size: cover;
+*/  background-size: contain;
   -webkit-animation: scrollpic 10s linear infinite;
   -webkit-animation-fill-mode: forwards;
   animation: scrollpic 10s linear infinite;
@@ -55,13 +55,30 @@ a:hover{
   height:100%;
   width:100%;
 /*  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.3) 20%, #FEF9E7 21%, #FEF9E7 22%, #FEF5E7 24%, #FEFFD7 25%, pink 30%, pink 70%, #FEFFD7 75%, #FEFFD7 80%, #FEF5E7 82%, #F4F6F6 100%);
-*/    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 204,.7) 21%,  rgba(255, 230, 255, .7) 70%);
+*/    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 7%, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 204,.7) 21%,  rgba(255, 230, 255, .7) 70%);
   z-index: 1000;
   position: relative;
   overflow: hidden;
+  background-size: contain;
 /*  transform: scaleY(1.5);
   -ms-transform: scaleY(1.5);  IE 9
-  -webkit-transform: scaleY(1.5); /* Safari 3-8 */*/
+  -webkit-transform: scaleY(1.5); /* Safari 3-8 */
+  }
+
+.main-bkgd3{
+  top:0px;
+  left:0px;
+  height:100%;
+  width:100%;
+/*  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.3) 20%, #FEF9E7 21%, #FEF9E7 22%, #FEF5E7 24%, #FEFFD7 25%, pink 30%, pink 70%, #FEFFD7 75%, #FEFFD7 80%, #FEF5E7 82%, #F4F6F6 100%);
+*/    background: linear-gradient(135deg, rgba(213, 5, 5, .6) 8%, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 204,.7) 21%,  rgba(255, 230, 255, .7) 70%);
+  z-index: 1000;
+  position: relative;
+  overflow: hidden;
+  background-size: contain;
+/*  transform: scaleY(1.5);
+  -ms-transform: scaleY(1.5);  IE 9
+  -webkit-transform: scaleY(1.5); /* Safari 3-8 */
   }
 
 @keyframes scrollpic{
@@ -119,7 +136,7 @@ a:hover{
   background-size: cover;
   width: 450px;
   height: 400px;
-  top: 600px;
+  top: 500px;
   left:-100px;
   opacity: .7;
   position:absolute;
@@ -165,10 +182,10 @@ a:hover{
 
 .typeIntro{
   overflow: hidden;
-  white-space: nowrap;
+  /*white-space: nowrap;*/
   margin: 0 auto;
   letter-spacing: .15em;
-  animation: typeIntro 3.5s steps(40, end),
+  animation: typeIntro 3.5s steps(40);
 }
 
 /* The typeIntro effect */
