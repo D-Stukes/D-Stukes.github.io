@@ -1,52 +1,109 @@
-.introPage{
-background-image:url("../images/geoBkgrd1.jpeg");
+/*.introPage{
+background: linear-gradient(to bottom right, white, pink, #F4F6F6);
+background-image:url("../images/dstukes-bkgrd1.png");
 background-size:cover;
+background-repeat: no-repeat;
+height: 100%;
+width: 100%;
+}
+*/
+
+.main-bkgd1{
+  height:100%;
+  width:100%;
+  background: linear-gradient(135deg, white 0%, white 20%, #FEF9E7 21%, #FEF9E7 22%, #FEF5E7 24%, #FEFFD7 25%, pink 30%, pink 70%, #FEFFD7 75%, #FEFFD7 80%, #FEF5E7 82%, #F4F6F6 100%);
+/*  content:"";*/
+/*  animation: fadepic .2s ease-out forwards;*/
+  position: absolute;
+  z-index: -10000;
+/*  background-size: cover;*/
+  background-attachment: fixed;
+  overflow: hidden;
 }
 
+.main-bkgd2{
+  top:0px;
+  left:0px;
+  height:2000px;
+  width:2000px;
+  background-image:url("../images/geo-building11.jpeg");
+  opacity: .3;
+  z-index: 1000;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-animation: scrollpic 10s linear infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation: scrollpic 10s linear infinite;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+/*  transform: scaleY(1.5);
+  -ms-transform: scaleY(1.5);  IE 9
+  -webkit-transform: scaleY(1.5); /* Safari 3-8 */*/
+  }
 
-.navlinks{
+@keyframes scrollpic {
+    from {background-position: 0 0;}
+    to {background-position: -180px 0px;}
+
+}
+
+@-webkit-keyframes scrollpic {
+    from {background-position: 0 0;}
+    to {background-position: -180px 0px;}
+}
+
+/*.main-flower{
+  width: 400px;
+  height: 400px;
+  top: 100px;
+  right:100px;
+  position: relative;
+  display: inline;
+  background-image:url("../images/roses-pale.jpeg");
+  opacity: .4;
+  z-index: 50000;
+}
+*/
+
+.navbox{
+  top:0;
+  left:0;
+  background: linear-gradient(-150deg, #DDDDDD 5%, #C3FCFB 10%, #FBFCFC 20%, #C3FCFB 30%, #FBFCFC 20%, #DDDDDD 5%, #C3FCFB 10%);
+  opacity: 6;
+  border-bottom-width: 25px;
+  border-bottom-color: green;
+  height: 100px;
+  width: 101%;
+  position:relative;
+  z-index: 5000px;
+  background-color: solid black;
   display: flex;
   font-size: 20px;
-  color: yellow;
-  padding-bottom: 0;
-  margin-bottom: 0;
 }
 
-.navLink1, .navlink2, .navlink3, .navlink4{
-  margin: 0;
+.navlink1, .navlink2, .navlink3, .navlink4{
+  margin-top: 30px;
+  margin-left: 50px;
   margin-right: 100px;
+  font-size: 25px;
+  font-weight: bold;
   flex-direction: row;
   flex:1;
 }
 
 
-.navlinks a{
-    display: block;
-    color: red;
-/*    text-align: center;
-    padding: 14px 16px;*/
-    text-decoration: none;
+a:hover{
     background-color: black;
-}
-
-.navlinks a:hover{
-    background-color: rgb(68, 68, 34);
+    opacity:5;
     color:  white;
 }
-
-
-
-
-
-
 
 .dianeHdg{
   margin-top: 100px;
   padding-left:50px;
   height: 50px;
   width: 350px;
-
-
 }
 
 .introPic{
@@ -74,3 +131,4 @@ text-align: center;
 .myName{
   color: bur;
 }
+
