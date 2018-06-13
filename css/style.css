@@ -1,70 +1,3 @@
-/*.introPage{
-background: linear-gradient(to bottom right, white, pink, #F4F6F6);
-background-image:url("../images/dstukes-bkgrd1.png");
-background-size:cover;
-background-repeat: no-repeat;
-height: 100%;
-width: 100%;
-}
-*/
-
-.main-bkgd1{
-  height:100%;
-  width:100%;
-  background: linear-gradient(135deg, white 0%, white 20%, #FEF9E7 21%, #FEF9E7 22%, #FEF5E7 24%, #FEFFD7 25%, pink 30%, pink 70%, #FEFFD7 75%, #FEFFD7 80%, #FEF5E7 82%, #F4F6F6 100%);
-/*  content:"";*/
-/*  animation: fadepic .2s ease-out forwards;*/
-  position: absolute;
-  z-index: -10000;
-/*  background-size: cover;*/
-  background-attachment: fixed;
-  overflow: hidden;
-}
-
-.main-bkgd2{
-  top:0px;
-  left:0px;
-  height:2000px;
-  width:2000px;
-  background-image:url("../images/geo-building11.jpeg");
-  opacity: .3;
-  z-index: 1000;
-  position: relative;
-  background-repeat: no-repeat;
-  background-size: cover;
-  -webkit-animation: scrollpic 10s linear infinite;
-  -webkit-animation-fill-mode: forwards;
-  animation: scrollpic 10s linear infinite;
-  animation-fill-mode: forwards;
-  overflow: hidden;
-/*  transform: scaleY(1.5);
-  -ms-transform: scaleY(1.5);  IE 9
-  -webkit-transform: scaleY(1.5); /* Safari 3-8 */*/
-  }
-
-@keyframes scrollpic {
-    from {background-position: 0 0;}
-    to {background-position: -180px 0px;}
-
-}
-
-@-webkit-keyframes scrollpic {
-    from {background-position: 0 0;}
-    to {background-position: -180px 0px;}
-}
-
-/*.main-flower{
-  width: 400px;
-  height: 400px;
-  top: 100px;
-  right:100px;
-  position: relative;
-  display: inline;
-  background-image:url("../images/roses-pale.jpeg");
-  opacity: .4;
-  z-index: 50000;
-}
-*/
 
 .navbox{
   top:0;
@@ -92,11 +25,107 @@ width: 100%;
   flex:1;
 }
 
-
 a:hover{
-    background-color: black;
+    /*background-color: black;*/
     opacity:5;
-    color:  white;
+    color:  blue;
+}
+.main-bkgd1{
+  height:100%;
+  width:100%;
+  background-image:url("../images/geo-building11.jpeg");
+/*  content:"";*/
+/*  animation: fadepic .2s ease-out forwards;*/
+  position: absolute;
+  z-index: -10000;
+/*  background-size: cover;*/
+  background-attachment: fixed;
+  overflow: hidden;
+/*  background-repeat: no-repeat;
+*/  background-size: cover;
+  -webkit-animation: scrollpic 10s linear infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation: scrollpic 10s linear infinite;
+  animation-fill-mode: forwards;
+}
+
+.main-bkgd2{
+  top:0px;
+  left:0px;
+  height:100%;
+  width:100%;
+/*  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.3) 20%, #FEF9E7 21%, #FEF9E7 22%, #FEF5E7 24%, #FEFFD7 25%, pink 30%, pink 70%, #FEFFD7 75%, #FEFFD7 80%, #FEF5E7 82%, #F4F6F6 100%);
+*/    background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 204,.7) 21%,  rgba(255, 230, 255, .7) 70%);
+  z-index: 1000;
+  position: relative;
+  overflow: hidden;
+/*  transform: scaleY(1.5);
+  -ms-transform: scaleY(1.5);  IE 9
+  -webkit-transform: scaleY(1.5); /* Safari 3-8 */*/
+  }
+
+@keyframes scrollpic{
+    from {background-position: 0 0;}
+    to {background-position: -180px 0px;}
+}
+
+@-webkit-keyframes scrollpic {
+    from {background-position: 0 0;}
+    to {background-position: -180px 0px;}
+}
+
+
+.main-flower{
+  background-image:url("../images/roses-pale2.png");
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  top: 450px;
+  left:1025px;
+  opacity: .5;
+  position:absolute;
+  z-index: 20000;
+/*  flex direction: row;*/
+  flex:3;
+}
+.main-flower2{
+  background-image:url("../images/roses-pale2.png");
+  background-size: cover;
+  width: 500px;
+  height: 500px;
+  top: 5px;
+  left:1200px;
+  opacity: .5;
+  position:absolute;
+  z-index: 20000;
+/*  flex direction: row;*/
+  flex:3;
+}
+.main-flower3{
+  background-image:url("../images/roses-paletop.png");
+  background-size: cover;
+  width: 500px;
+  height: 450px;
+  top: -150px;
+  left:950px;
+  opacity: .5;
+  position:absolute;
+  z-index: 20000;
+/*  flex direction: row;*/
+  flex:3;
+}
+.main-flower4{
+  background-image:url("../images/roses-bouquet.png");
+  background-size: cover;
+  width: 450px;
+  height: 400px;
+  top: 600px;
+  left:-100px;
+  opacity: .7;
+  position:absolute;
+  z-index: 20000;
+/*  flex direction: row;*/
+  flex:3;
 }
 
 .dianeHdg{
@@ -107,28 +136,115 @@ a:hover{
 }
 
 .introPic{
-background-image:url("../images/dstukes2-oval.png");
-width: 300px;
-height: 300px;
-margin-left:50px;
-background-size: cover;
-padding-bottom: 50px;
+  background-image:url("../images/dstukes2-oval.png");
+  top:100px;
+  width: 300px;
+  height: 300px;
+  margin-left:50px;
+  background-size: cover;
+  padding-bottom: 50px;
+  position:absolute;
+  z-index: 20000;
+  flex direction: row;
+  flex:2;
 }
 
 .dianeIntro{
   border:black;
   margin-left: 50px;
-  top:200px;
-  font-size: 20px;
+  top:100px;
+  left:400px;
+  font-size: 30px;
   height: 200px;
-  width: 500px;
+  width: 650px;
+  position:absolute;
+  z-index: 20000;
+  flex direction: row;
+  flex:2;
 }
 
-.portfolio{
+.typeIntro{
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: .15em;
+  animation: typeIntro 3.5s steps(40, end),
+}
+
+/* The typeIntro effect */
+@keyframes typeIntro {
+  from { width: 0 ;}
+  to { width: 100% ;}
+}
+
+.contactInfo{
+  top:75px;
+  left: 250px;
+  height:400px;
+  width:600px;
+  padding: 150px;
+  font-size: 17px;
+  color:black;
+  background-image:url("../images/geo-building16.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline;
+  opacity: .6;
+  z-index: 10000;
+  position: absolute;
+  flex direction: row;
+  flex:2;
+}
+.portfolio, .myBrand, .companies{
 text-align: center;
 }
 
+.myBrand{
+  font-style:italic;
+}
 .myName{
   color: bur;
 }
+
+
+/* font-size: 3em;
+*/ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 15px;
+ text-align: center;
+ /
+ * beginning of scrolling text */
+/* -moz-transform:translateY(40%);
+ -webkit-transform:translateY(40%);*/
+ transform:translateY(100%);
+
+ -moz-animation: scrolltext 15s linear infinite;
+ -webkit-animation: scrolltext 15s linear infinite;
+ animation: scrolltext 15s linear infinite;
+}
+
+@-moz-keyframes scrolltext {
+ 0%   { -moz-transform: translateY(100%); }
+ 100% { -moz-transform: translateY(-40%); }
+}
+@-webkit-keyframes scrolltext {
+ 0%   { -webkit-transform: translateY(100%); }
+ 100% { -webkit-transform: translateY(-40%); }
+}
+@keyframes scrolltext {
+ 0%   /*{
+ -moz-transform: translateY(100%)*/; /* Firefox bug fix */
+ -webkit-transform: translateY(40%); /* Firefox bug fix */
+ transform: translateY(40%);
+ }
+ 100% {
+ -moz-transform: translateY(-40%); /* Firefox bug fix */
+ -webkit-transform: translateY(-40%); /* Firefox bug fix */
+ transform: translateY(-40%);
+ }
+}
+
+
 
