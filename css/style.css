@@ -242,11 +242,13 @@ a:hover, .contactlink, .projectlink{
   border-radius: 25px;
   border: 10px rgb(240, 242, 119, .7)float:left;;
   border-color: yellow;
-  background-image:url("../images/geo-building8.jpeg");
-  opacity: .6;
+/*  background-image:url("../images/geo-building8.jpeg");*/
+  /*opacity: .6;*/
   background-repeat: no-repeat;
   background-size: cover;
   display: inline;
+  display: inline-flex;
+  flex-direction: row;
 
 
   z-index: 10000;
@@ -318,17 +320,56 @@ text-align: center;
   perspective-origin: 50% 100px;
 }
 
+
+
+  .project2{
+    background-image:url("../images/ladyd_apothecary.png");
+    background-size: cover;
+    background-position: center;
+    width: 450px;
+    height: 400px;
+    top: 50px;
+    left:700px;
+    opacity: .8;
+    position:absolute;
+    z-index: 20000;
+  /*  flex direction: row;*/
+    flex:1;
+}
+
 .project4{
   background-image:url("../images/health_practitioner.png");
   background-size: cover;
-  width: 450px;
+  background-position: center;
+  width: 500px;
   height: 400px;
-  top: 500px;
-  left:-100px;
-  opacity: .7;
+  top: 50px;
+  left: 170px;
+  opacity: .8;
   position:absolute;
   z-index: 20000;
 /*  flex direction: row;*/
-  flex:3;
+  flex:1;
+}
+
+  .project1{
+    background-image:url("../images/bubble_pop_mania.png");
+    background-size: cover;
+    background-position: center;
+    width: 450px;
+    height: 400px;
+    top: 50px;
+    left:-300px;
+    opacity: .8;
+    position:absolute;
+    z-index: 20000;
+  /*  flex direction: row;*/
+  flex:1;
+}
+
+.projectlink{
+/*  pointer-events: none;
+  cursor: default;*/
+  visibility: none;
 }
 
