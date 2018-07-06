@@ -2,7 +2,9 @@
 .navbox{
   top:0;
   left:0;
-  background: linear-gradient(-150deg, #DDDDDD 5%, #C3FCFB 10%, #FBFCFC 20%, #C3FCFB 30%, #FBFCFC 20%, #DDDDDD 5%, #C3FCFB 10%);
+  /*background: linear-gradient(-150deg, #DDDDDD 5%, #C3FCFB 10%, #FBFCFC 20%, #C3FCFB 30%, #FBFCFC 20%, #DDDDDD 5%, #C3FCFB 10%);*/
+/*  background: linear-gradient(to top left, white, lightblue);*/
+background-image: url("")
   opacity: 6;
   border-bottom-width: 25px;
   border-bottom-color: green;
@@ -23,6 +25,10 @@
   font-weight: bold;
   flex-direction: row;
   flex:1;
+}
+
+.navlink1 a, .navlink2 a, .navlink3 a, .navlink4 a {
+  text-decoration: none;
 }
 
 .projectTitle{
@@ -353,7 +359,7 @@ text-align: center;
 }
 
   .project1{
-    background-image:url("../images/bubble_pop_mania.png");
+    background-image:url("../images/bubblepopmania.png");
     background-size: cover;
     background-position: center;
     width: 450px;
@@ -367,9 +373,15 @@ text-align: center;
   flex:1;
 }
 
-.projectlink{
-/*  pointer-events: none;
-  cursor: default;*/
-  visibility: none;
-}
+.project1box:hover{
+    background-color: aqua;
+};
+
+.project2box:hover{
+    background-color: green;
+};
+
+.project4box:hover{
+    background-color: blue;
+};
 
