@@ -33,14 +33,21 @@
   display:inline-block;
   border-radius: 50px;
   padding: 10px;
+  font-family: arial;
  }
 
-.link{
+.n-link{
     transition: 1s;
+    color: #ff00aa;
  }
 
-.link:hover{
+.n-link:hover, a.selected{
  font-size: 30px;
+ }
+
+ a.selected{
+  background-color: #ff00aa;
+  color: black;
  }
 
 .projectTitle{
@@ -48,13 +55,20 @@
   font-size: 32px;
  }
 
-a:hover, .contactlink, .projectlink{
-    background-color: white;
+ .n-link:hover, a:active{
+    background-color: #ff00aa;
     opacity:5;
-    color:  blue;
+    color: black;
     text-decoration: none;
     transform: scale(.9);
  }
+
+/*  .project1:hover, .project2:hover, .project3:hover, .project4:hover{
+    border:#ff00aa 10px;
+    transform: scale(.9);
+ }*/
+
+
 
  .project1, .project2, .project3, .project4{
   transition: 1s;
@@ -66,7 +80,7 @@ transform: scale(1.05);
 
 .contactlink, .projectlink{
   opacity:8;
-  font-weight: bolder;
+  font-weight: bold;
   color: black;
   font-family: arial;
  }
@@ -158,12 +172,25 @@ transform: scale(1.05);
   flex:3;
 }
 .main-flower4{
-  background-image:url("../images/roses-bouquet.png");
+  background-image:url("../images/geo-red-dots.jpeg");
   background-size: cover;
   width: 450px;
   height: 400px;
   top: 500px;
-  left:-100px;
+  left: 0px;
+  opacity: .5;
+  position:absolute;
+  z-index: 20000;
+  flex:3;
+}
+
+.main-flower5{
+  background-image:url("../images/pinkrose-bouquet2.jpg");
+  background-size: cover;
+  width: 450px;
+  height: 400px;
+  top: 500px;
+  left:-10px;
   opacity: .7;
   position:absolute;
   z-index: 20000;
@@ -171,8 +198,8 @@ transform: scale(1.05);
 }
 
 .introPic{
-  background-image:url("../images/dstukes2-oval.png");
-  top:100px;
+  background-image:url("../images/womantech-color.png");
+  top:150px;
   width: 300px;
   height: 300px;
   margin-left:50px;
@@ -182,6 +209,29 @@ transform: scale(1.05);
   z-index: 20000;
   flex direction: row;
   flex:2;
+  opacity: .7;
+}
+
+.gear1{
+  margin-top: 19px;
+  margin-left:66px;
+  height: 150px;
+  width:100px;
+  display:inline-block;
+}
+
+.gear2{
+  margin-left:41px;
+  height: 150px;
+  width:100px;
+  margin-top: -161px;
+}
+
+.gear3{
+  margin-left:103px;
+  height: 103px;
+  width:111px;
+  margin-top: -214px;
 }
 
 .dianeIntro{
@@ -215,7 +265,7 @@ transform: scale(1.05);
 
 .contactInfo{
   margin-top:100px;
-  margin-left: 450px;
+  margin-left: 375px;
   /*height:auto;*/
   width:300px;
   padding: 150px;
@@ -381,20 +431,30 @@ text-align: center;
 }
 
 .contacthdg{
-  top:300px;
+  top:100px;
   justify-content: center;
   text-align: center;
   flex:1;
 }
 
 .contactbox {
-    /*margin-top:200px;*/
-    width: 200px;
+    width: 300px;
     height: 500px;
     display:flex;
     flex-direction:column;
-    justify-content: space-between;
-    margin-left: 40px;
+    align-items: center;
+    /*margin-left: 40px;*/
+}
+
+.contact-label{
+  width:200px;
+  height: 75px;
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: center;
+  text-wrap: unrestricted;
+  position: sticky;
+  align-self: center;
 }
 
 .email{
