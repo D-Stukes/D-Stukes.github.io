@@ -2,90 +2,100 @@
 .navbox{
   top:0;
   left:0;
-  /*background: linear-gradient(-150deg, #DDDDDD 5%, #C3FCFB 10%, #FBFCFC 20%, #C3FCFB 30%, #FBFCFC 20%, #DDDDDD 5%, #C3FCFB 10%);*/
-/*  background: linear-gradient(to top left, white, lightblue);*/
-background-image: url("")
+  background-image: url("../images/bridge9.jpg");
+  background-size: cover;
   opacity: 6;
-  border-bottom-width: 25px;
-  border-bottom-color: green;
-  height: 100px;
+  height: 125px;
   width: 101%;
-  position:relative;
+  position:fixed;
   z-index: 5000px;
   background-color: solid black;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   font-size: 20px;
-}
+ }
 
 .navlink1, .navlink2, .navlink3, .navlink4{
   margin-top: 30px;
-  margin-left: 50px;
+  margin-left: 120px;
+  height:50px%;
+  width:50px%;
   margin-right: 100px;
   font-size: 25px;
   font-weight: bold;
   flex-direction: row;
   flex:1;
-}
+ }
 
-.navlink1 a, .navlink2 a, .navlink3 a, .navlink4 a {
+.navlink1 a, .navlink2 a, .navlink3 a, .navlink4 a{
   text-decoration: none;
-}
+  display:inline-block;
+  border-radius: 50px;
+  padding: 10px;
+ }
+
+.link{
+    transition: 1s;
+ }
+
+.link:hover{
+ font-size: 30px;
+ }
 
 .projectTitle{
   font-family: arial;
   font-size: 32px;
-}
+ }
 
 a:hover, .contactlink, .projectlink{
-    /*background-color: black;*/
+    background-color: white;
     opacity:5;
     color:  blue;
     text-decoration: none;
-    text-decoration-style: none;
-    text-decoration-line: none;
+    transform: scale(.9);
+ }
+
+ .project1, .project2, .project3, .project4{
+  transition: 1s;
+ }
+
+.project1:hover, .project2:hover, .project3:hover, .project4:hover{
+transform: scale(1.05);
 }
 
 .contactlink, .projectlink{
   opacity:8;
   font-weight: bolder;
   color: black;
-/*  outline-color: blue;*/
-  /*font-size: 18px;*/
   font-family: arial;
-}
+ }
+
 .main-bkgd1{
   height:100%;
   width:100%;
   background-image:url("../images/geo-building11.jpeg");
-/*  content:"";*/
-/*  animation: fadepic .2s ease-out forwards;*/
   position: absolute;
   z-index: -10000;
-/*  background-size: cover;*/
   background-attachment: fixed;
   overflow: hidden;
-/*  background-repeat: no-repeat;
-*/  background-size: contain;
+  background-size: contain;
   -webkit-animation: scrollpic 10s linear infinite;
   -webkit-animation-fill-mode: forwards;
   animation: scrollpic 10s linear infinite;
   animation-fill-mode: forwards;
-}
+ }
 
 .main-bkgd2{
   top:0px;
-  left:0px;
+  left: -.50px;
   height:100%;
   width:100%;
-/*  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.3) 20%, #FEF9E7 21%, #FEF9E7 22%, #FEF5E7 24%, #FEFFD7 25%, pink 30%, pink 70%, #FEFFD7 75%, #FEFFD7 80%, #FEF5E7 82%, #F4F6F6 100%);
-*/    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 27%, rgba(255, 255, 204,.7) 21%,  rgba(255, 230, 255, .7) 70%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 27%, rgba(255, 255, 204,.7) 21%, rgba(255, 230, 255, .7) 70%);
   z-index: 1000;
   position: relative;
   overflow: hidden;
-  background-size: contain;
-/*  transform: scaleY(1.5);
-  -ms-transform: scaleY(1.5);  IE 9
-  -webkit-transform: scaleY(1.5); /* Safari 3-8 */
+  background-size: cover;
   }
 
 .main-bkgd3{
@@ -93,15 +103,11 @@ a:hover, .contactlink, .projectlink{
   left:0px;
   height:100%;
   width:100%;
-/*  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.3) 20%, #FEF9E7 21%, #FEF9E7 22%, #FEF5E7 24%, #FEFFD7 25%, pink 30%, pink 70%, #FEFFD7 75%, #FEFFD7 80%, #FEF5E7 82%, #F4F6F6 100%);
-*/    background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 28%, rgba(255, 255, 204,.7) 21%,  rgba(255, 230, 255, .7) 70%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 28%, rgba(255, 255, 204,.7) 21%, rgba(255, 230, 255, .7) 70%);
   z-index: 1000;
   position: relative;
   overflow: hidden;
   background-size: contain;
-/*  transform: scaleY(1.5);
-  -ms-transform: scaleY(1.5);  IE 9
-  -webkit-transform: scaleY(1.5); /* Safari 3-8 */
   }
 
 @keyframes scrollpic{
@@ -125,9 +131,8 @@ a:hover, .contactlink, .projectlink{
   opacity: .5;
   position:absolute;
   z-index: 20000;
-/*  flex direction: row;*/
   flex:3;
-}
+ }
 .main-flower2{
   background-image:url("../images/roses-pale2.png");
   background-size: cover;
@@ -138,9 +143,8 @@ a:hover, .contactlink, .projectlink{
   opacity: .5;
   position:absolute;
   z-index: 20000;
-/*  flex direction: row;*/
   flex:3;
-}
+ }
 .main-flower3{
   background-image:url("../images/roses-paletop.png");
   background-size: cover;
@@ -151,7 +155,6 @@ a:hover, .contactlink, .projectlink{
   opacity: .5;
   position:absolute;
   z-index: 20000;
-/*  flex direction: row;*/
   flex:3;
 }
 .main-flower4{
@@ -164,17 +167,9 @@ a:hover, .contactlink, .projectlink{
   opacity: .7;
   position:absolute;
   z-index: 20000;
-/*  flex direction: row;*/
   flex:3;
 }
 
-/*.dianeHdg{
-  margin-top: 100px;
-  padding-left:50px;
-  height: 50px;
-  width: 350px;
-}
-*/
 .introPic{
   background-image:url("../images/dstukes2-oval.png");
   top:100px;
@@ -202,7 +197,7 @@ a:hover, .contactlink, .projectlink{
   z-index: 20000;
   flex direction: row;
   flex:2;
-}
+ }
 
 .typeIntro{
   overflow: hidden;
@@ -210,7 +205,7 @@ a:hover, .contactlink, .projectlink{
   margin: 0 auto;
   letter-spacing: .15em;
   animation: typeIntro 3.5s steps(40);
-}
+ }
 
 /* The typeIntro effect */
 @keyframes typeIntro {
@@ -219,10 +214,10 @@ a:hover, .contactlink, .projectlink{
 }
 
 .contactInfo{
-  top:75px;
-  left: 250px;
-  height:400px;
-  width:600px;
+  margin-top:100px;
+  margin-left: 450px;
+  /*height:auto;*/
+  width:300px;
   padding: 150px;
   font-size: 17px;
   border-radius: 25px;
@@ -241,80 +236,59 @@ a:hover, .contactlink, .projectlink{
 .projects{
   top:75px;
   left: 300px;
-  height:600px;
+  height:1200px;
   width:800px;
   padding: 15px;
   color:black;
   border-radius: 25px;
   border: 10px rgb(240, 242, 119, .7)float:left;;
   border-color: yellow;
-/*  background-image:url("../images/geo-building8.jpeg");*/
-  /*opacity: .6;*/
   background-repeat: no-repeat;
   background-size: cover;
   display: inline;
   display: inline-flex;
   flex-direction: row;
-
-
   z-index: 10000;
   position: absolute;
   flex direction: row;
   flex:2;
-}
+ }
 
 .projectList{
   opacity:9;
   font-size: 12px;
   color: black;
   margin-left: 30px;
-}
+ }
 
 .portfolio, .myBrand, .companies{
 text-align: center;
-}
+ }
 
 .myBrand{
   font-style:italic;
-}
+ }
 .myName{
-  color: bur;
-}
+  color: blue;
+ }
 
-
-/* font-size: 3em;
-*/ position: absolute;
- width: 100%;
- height: 100%;
- margin: 0;
- line-height: 15px;
- text-align: center;
- /
- * beginning of scrolling text */
-/* -moz-transform:translateY(40%);
- -webkit-transform:translateY(40%);*/
- transform:translateY(100%);
-
- -moz-animation: scrolltext 15s linear infinite;
- -webkit-animation: scrolltext 15s linear infinite;
- animation: scrolltext 15s linear infinite;
-}
-
-@-moz-keyframes scrolltext {
+@-moz-keyframes scrolltext{
  0%   { -moz-transform: translateY(100%); }
  100% { -moz-transform: translateY(-40%); }
 }
-@-webkit-keyframes scrolltext {
+@-webkit-keyframes scrolltext{
  0%   { -webkit-transform: translateY(100%); }
  100% { -webkit-transform: translateY(-40%); }
 }
 @keyframes scrolltext {
- 0%   /*{
+ 0%
+ {
  -moz-transform: translateY(100%)*/; /* Firefox bug fix */
  -webkit-transform: translateY(40%); /* Firefox bug fix */
  transform: translateY(40%);
  }
- 100% {
+ 100%
+ {
  -moz-transform: translateY(-40%); /* Firefox bug fix */
  -webkit-transform: translateY(-40%); /* Firefox bug fix */
  transform: translateY(-40%);
@@ -326,62 +300,146 @@ text-align: center;
   perspective-origin: 50% 100px;
 }
 
-
-
-  .project2{
-    background-image:url("../images/ladyd_apothecary.png");
-    background-size: cover;
-    background-position: center;
-    width: 450px;
-    height: 400px;
-    top: 50px;
-    left:700px;
-    opacity: .8;
-    position:absolute;
-    z-index: 20000;
-  /*  flex direction: row;*/
-    flex:1;
+.projectbox1{
+  width: 510px
+  height: 401px;
+  border:black 3px;
 }
 
 .project4{
   background-image:url("../images/health_practitioner.png");
   background-size: cover;
   background-position: center;
-  width: 500px;
-  height: 400px;
-  top: 50px;
-  left: 170px;
+  width: 400px;
+  height: 300px;
+  top: 150px;
+  left: 30px;
   opacity: .8;
   position:absolute;
+  border: 5px solid;
   z-index: 20000;
-/*  flex direction: row;*/
   flex:1;
+}
+
+  .project3{
+    background-image:url("../images/travel-location-list.png");
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 300px;
+    top: 150px;
+    left:480px;
+    opacity: .8;
+    border: 5px solid;
+    position:absolute;
+    z-index: 20000;
+    flex:1;
 }
 
   .project1{
     background-image:url("../images/bubblepopmania.png");
     background-size: cover;
     background-position: center;
-    width: 450px;
-    height: 400px;
-    top: 50px;
-    left:-300px;
+    width: 400px;
+    height: 300px;
+    border: 5px solid;
+    top: 150px;
+    left:930px;
     opacity: .8;
     position:absolute;
     z-index: 20000;
-  /*  flex direction: row;*/
-  flex:1;
+    flex direction: row;
+    flex:1;
+}
+
+  .project2{
+    background-image:url("../images/ladyd_apothecary.png");
+    background-size: cover;
+    background-position: center;
+    width: 400px;
+    height: 300px;
+    top: 500px;
+    border: 5px solid;
+    left:30px;
+    opacity: .8;
+    position:absolute;
+    z-index: 20000;
+    flex direction: row;
+    flex:1;
 }
 
 .project1box:hover{
     background-color: aqua;
-};
+}
 
 .project2box:hover{
     background-color: green;
-};
+}
 
 .project4box:hover{
     background-color: blue;
-};
+}
 
+.contacthdg{
+  top:300px;
+  justify-content: center;
+  text-align: center;
+  flex:1;
+}
+
+.contactbox {
+    /*margin-top:200px;*/
+    width: 200px;
+    height: 500px;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-between;
+    margin-left: 40px;
+}
+
+.email{
+  background-image:url("../images/gmail-icon.png");
+  background-size: cover;
+  background-position: center;
+  width: 200px;
+  height: 100px;
+/*  top: 150px;
+  left: 30px;*/
+  opacity: .9;
+  /*position:absolute;*/
+  border: 5px solid;
+  z-index: 20000;
+  flex:1;
+}
+
+  .linkedin{
+    background-image:url("../images/linkedin-icon-black.png");
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 100px;
+/*    top: 150px;
+    left: 300px;*/
+    opacity: .9;
+    /*position:absolute;*/
+    border: 5px solid;
+    z-index: 20000;
+    flex direction: row;
+    flex:1;
+  }
+
+  .github{
+    background-image:url("../images/GitHub-Mark-120px-plus.png");
+    background-size: cover;
+    background-position: center;
+    width: 200px;
+    height: 100px;
+/*    top: 150px;
+    left: 600px;*/
+    opacity: .9;
+    /*position:absolute;*/
+    border: 5px solid;
+    z-index: 20000;
+    flex direction: row;
+    flex:1;
+  }

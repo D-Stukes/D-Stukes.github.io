@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Diane Stukes - My Projects</title>
+    <link rel="stylesheet"  href = "./css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+
+  <body class="main">
+    <div class="navbox">
+      <div class="navlink1"> <a href="index.html" class="link">About Me</a></div>
+<!--       <div class="navlink2"> <a href="dsportfolio.html" class="link">My Portfolio</a></div> -->
+      <div class="navlink3"> <a href="projects.html" class="link">My Projects</a></div>
+      <div class="navlink4"> <a href="contactMe.html" class="link">Contact Me</a></div>
+    </div>
+    <main class="main-bkgd1">
+      <div class="main-bkgd2">
+        <div class="projects">
+          <div class="projectbox1">
+
+            <!-- Health Practioner App -->
+            <a class="projectlink" href="https://salty-journey-43707.herokuapp.com/">
+                <div class="project4"></div>
+            </a>
+
+            <!-- Google Map Linked Travel List App -->
+            <a class="projectlink" href="https://travel-location-list.herokuapp.com/">
+              <div class="project3"></div>
+            </a>
+
+
+            <!-- Bubble Pop Game -->
+            <a class="projectlink" href="http://www.dianestukes.com/Bubble-Pop-Mania/">
+              <div class="project1"></div>
+            </a>
+
+          </div>
+
+          <div class="projectbox2">
+
+          <!-- Apothecary List App -->
+
+              <a class="projectlink" href="https://ld-apothecary-boutique.herokuapp.com/">
+                <div class="project2"> </div>
+              </a>
+
+            <!-- Charity Super Heroes -->
+            <a class="projectlink" href="[enter link to deployed project]">
+              <div class="projectc"></div>
+            </a>
+
+            <!-- Dancing Disco Aliens -->
+            <a class="projectlink" href="[enter link to deployed project]">
+              <div class="projectb"></div>
+            </a>
+
+            <!-- My Favorite Heroes and Heroines -->
+            <a class="projectlink" href="[enter link to deployed project]">
+              <div class="projecta"></div>
+            </a>
+
+          </div>
+      </div>
+      </div>
+    </main>
+  </body>
+</html>
+
+          <!-- </div> -->
+        <!-- <div class="wrap">
+          <div class="cube">
+            <div class="front">front</div>
+            <div class="back">back</div>
+            <div class="top">top</div>
+            <div class="bottom">bottom</div>
+            <div class="left">left</div>
+            <div class="right">right</div>
+        </div>
+        </div> -->
+
+/* font-size: 3em;
+*/ position: absolute;
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ line-height: 15px;
+ text-align: center;
+ /
+ * beginning of scrolling text */
+/* -moz-transform:translateY(40%);
+ -webkit-transform:translateY(40%);*/
+ transform:translateY(100%);
+
+ -moz-animation: scrolltext 15s linear infinite;
+ -webkit-animation: scrolltext 15s linear infinite;
+ animation: scrolltext 15s linear infinite;
+}
+
+
+<table class="my-table">
+          <caption>table title and/or explanatory text</caption>
+          <thead>
+            <tr>
+              <th>header</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <a  dstukes888@gmail.com">
+                 <div class="email">    <br/> <h3>dstukes888@gmail.com</h3></div>
+                </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+              <a class= href="https://www.linkedin.com/in/dianestukes/">
+                <div class="linkedin"></div>
+              </a>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+              <a href="https://github.com/D-Stukes">
+                <div class="github"></div>
+              </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
