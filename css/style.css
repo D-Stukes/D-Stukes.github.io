@@ -174,11 +174,11 @@ transform: scale(1.05);
 .main-flower4{
   background-image:url("../images/geo-red-dots.jpeg");
   background-size: cover;
-  width: 450px;
+  width: 420px;
   height: 400px;
   top: 500px;
   left: 0px;
-  opacity: .5;
+  opacity: .35;
   position:absolute;
   z-index: 20000;
   flex:3;
@@ -187,7 +187,7 @@ transform: scale(1.05);
 .main-flower5{
   background-image:url("../images/pinkrose-bouquet2.jpg");
   background-size: cover;
-  width: 450px;
+  width: 420px;
   height: 400px;
   top: 500px;
   left:-10px;
@@ -237,12 +237,13 @@ transform: scale(1.05);
 .dianeIntro{
   border:black;
   border-radius: 25px;
-  margin-left: 50px;
+  margin-left: 18px;
+/*  text-align: justify-all;*/
   top:100px;
-  left:400px;
+  left:304px;
   font-size: 30px;
   height: 200px;
-  width: 650px;
+  width: 900px;
   position:absolute;
   z-index: 20000;
   flex direction: row;
@@ -261,6 +262,121 @@ transform: scale(1.05);
 @keyframes typeIntro {
   from { width: 0 ;}
   to { width: 100% ;}
+}
+
+.myname{
+margin-left: 165px;
+}
+.techboxhdg{
+height: 100px;
+width: 300px;
+margin-top: 105px;
+margin-left: 248px;
+font-family: arial;
+text-transform: uppercase;
+}
+
+.techbox {      /*styles area of in navbar container*/
+    height: 100vh;
+    flex: 1;
+    width: 650px;
+    top: 480px;
+    left: 425px;
+    position: absolute;
+/*    background-color: rgba(17, 2, 33, 0.5);*/
+    /*overflow-x: hidden; keeps the text from spilling into the navbar*/
+    z-index: 100000;
+    display: grid;
+    grid-template-columns: 135px 135px 135px 135px 135px;
+    grid-template-rows:135px 135px 135px;
+    grid-gap: 10px;
+
+}
+
+.techbox img{
+    height: 100%;
+    width: 100%;
+}
+.tech1{
+/*    background-image: url('../images/tech-icons/CSS-trans.jpg');*/
+    grid-row-start:1;  grid-row-end: 2;
+    grid-column-start: 1; grid-column-end: 2;
+    opacity: 1;
+}
+.tech2{
+    /*background-image: url('HTML2.png');*/
+    grid-row-start:1;  grid-row-end: 2;
+    grid-column-start: 2; grid-column-end: 3;
+}
+.tech3{
+    /*background-image: url('../images/tech-icons/javascript-trans.png');*/
+    grid-row-start:1;  grid-row-end: 2;
+    grid-column-start: 3; grid-column-end: 4;
+}
+.tech4{
+    /*background-image: url('../images/tech-icons/jquery.jpg');*/
+    grid-row-start:1;  grid-row-end: 2;
+    grid-column-start: 4; grid-column-end: 5;
+}
+
+.tech5{
+    /*background-image: url('../images/tech-icons/node-express-trans.jpg');*/
+    grid-row-start: 1;  grid-row-end: 2;
+    grid-column-start: 5; grid-column-end: 6;
+}
+
+.tech6{
+    /*background-image: url('../images/tech-icons/reactjs-hex.jpg');*/
+    grid-row-start:2;  grid-row-end: 3;
+    grid-column-start: 1; grid-column-end: 2;
+}
+
+.tech7{
+    /*background-image: url('../images/tech-icons/postgresql-trans.jpg');*/
+    grid-row-start:2;  grid-row-end: 3;
+    grid-column-start: 2; grid-column-end: 3;
+}
+.tech8{
+    /*background-image: url('../images/tech-icons/git-color.jpg');*/
+    grid-row-start:2;  grid-row-end: 3;
+    grid-column-start: 3; grid-column-end: 4;
+}
+.tech9{
+    /*background-image: url('../images/tech-icons/php-trans.png');*/
+    grid-row-start:2;  grid-row-end: 3;
+    grid-column-start: 4; grid-column-end: 5;
+}
+.tech10{
+    /*background-image: url('../images/tech-icons/flexbox-square.png');*/
+    grid-row-start:2;  grid-row-end: 3;
+    grid-column-start: 5; grid-column-end: 6;
+}
+
+.tech11{
+    /*background-image: url('../images/tech-icons/sublime2.jpg');*/
+    grid-row-start: 3;  grid-row-end: 4;
+    grid-column-start: 1; grid-column-end: 2;
+}
+.tech12{
+    /*background-image: url('../images/tech-icons/grid.jpg');*/
+    grid-row-start:3;  grid-row-end: 4;
+    grid-column-start: 2; grid-column-end: 3;
+}
+.tech13{
+    /*background-image: url('../images/tech-icons/rubyonrails.jpg');*/
+    grid-row-start:3;  grid-row-end: 4;
+    grid-column-start: 3; grid-column-end: 4;
+}
+.tech14{
+    /*background-image: url('../images/tech-icons/jquery.jpg');*/
+    grid-row-start:3;  grid-row-end: 4;
+    grid-column-start: 4; grid-column-end: 5;
+}
+
+.tech15{
+    /*background-image: url('../images/tech-icons/material-UI.png');*/
+    grid-row-start: 3;  grid-row-end: 4;
+    grid-column-start: 5; grid-column-end: 6;
 }
 
 .contactInfo{
@@ -446,14 +562,18 @@ text-align: center;
     /*margin-left: 40px;*/
 }
 
+.c-link{
+  display: block;
+}
+
 .contact-label{
-  width:200px;
+  width:100%;
   height: 75px;
   font-size: 20px;
   font-weight: bolder;
   text-align: center;
-  text-wrap: unrestricted;
-  position: sticky;
+  /*text-wrap: unrestricted;*/
+  /*position: sticky;*/
   align-self: center;
 }
 
@@ -470,6 +590,7 @@ text-align: center;
   border: 5px solid;
   z-index: 20000;
   flex:1;
+ /* margin-left: 73px;*/
 }
 
   .linkedin{
@@ -486,6 +607,7 @@ text-align: center;
     z-index: 20000;
     flex direction: row;
     flex:1;
+    margin-left: 73px;
   }
 
   .github{
@@ -502,4 +624,73 @@ text-align: center;
     z-index: 20000;
     flex direction: row;
     flex:1;
+    margin-left: 17px;
   }
+
+  .emailhdg{
+    text-align: center;
+    font-family: arial;
+  }
+  .emailForm1{
+    background-image: url("../images/geo-building18.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 260px;
+    margin-left: 325px;
+    width: 700px;
+    height: 600px;
+    /*display:flex;*/
+    /*flex-direction:column;*/
+    align-items: left;
+    border: solid 3px;
+    padding: 10px;
+
+  }
+
+.emailtext{
+  color: darkblue;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: arial;
+}
+
+.messagetext{
+  color: darkblue;
+  font-size: 18px;
+  font-family: arial;
+  height: 200px;
+  width: 100%;
+}
+
+  input[type=text], input[type=email] {
+    width: 60%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    margin-left: 50px;
+}
+
+  input[type=submit]{
+    width: 100px;
+    height: 60px;
+    color:blue;
+    left:500px;
+    margin-left: 700px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: gray 2px;
+}
+
+
+   /*.emailbox{
+    margin-top:300px;
+    margin-left:625px;
+    width: 600px;
+    height: 500px;
+    display:flex;
+    /*flex-direction:column;*/
+  /*  align-items: center;
+    border: solid 3px;
+
+  }*/
