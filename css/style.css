@@ -1,3 +1,10 @@
+/*
+* {
+  box-sizing: border-box;
+}
+*/
+
+
 
 .navbox{
   top:0;
@@ -18,9 +25,9 @@
 
 .navlink1, .navlink2, .navlink3, .navlink4{
   margin-top: 30px;
-  margin-left: 120px;
-  height:50px%;
-  width:50px%;
+  margin-left: 160px;
+  height:50px;
+  width:50px;
   margin-right: 100px;
   font-size: 25px;
   font-weight: bold;
@@ -34,14 +41,15 @@
   border-radius: 50px;
   padding: 10px;
   font-family: arial;
+  color: #ff00aa;
  }
 
-.n-link{
+/*.n-link{
     transition: 1s;
     color: #ff00aa;
  }
-
-.n-link:hover, a.selected{
+*/
+/*.n-link:hover, a.selected{
  font-size: 30px;
  }
 
@@ -49,28 +57,31 @@
   background-color: #ff00aa;
   color: black;
  }
+*/
+
+.navlink1 a:hover, .navlink2 a:hover, .navlink3 a:hover{
+   background-color: #ff00aa;
+   font-size: 30px;
+   color: black; 
+   transition: .6s background-color;
+   text-decoration: none;
+   transform: scale(.9);
+}
+
+.navlink1 .target, .navlink2 .target, .navlink3 .target{
+   background-color: #ff00aa;
+   font-size: 24px;
+   color: black;
+   cursor: default;
+}
 
 .projectTitle{
   font-family: arial;
   font-size: 32px;
  }
 
- .n-link:hover, a:active{
-    background-color: #ff00aa;
-    opacity:5;
-    color: black;
-    text-decoration: none;
-    transform: scale(.9);
- }
 
-/*  .project1:hover, .project2:hover, .project3:hover, .project4:hover{
-    border:#ff00aa 10px;
-    transform: scale(.9);
- }*/
-
-
-
- .project1, .project2, .project3, .project4{
+.project1, .project2, .project3, .project4{
   transition: 1s;
  }
 
@@ -174,10 +185,10 @@ transform: scale(1.05);
 .main-flower4{
   background-image:url("../images/geo-red-dots.jpeg");
   background-size: cover;
-  width: 420px;
-  height: 400px;
+  width:290px;
+  height:325px;
   top: 500px;
-  left: 0px;
+  left: 29px;
   opacity: .35;
   position:absolute;
   z-index: 20000;
@@ -187,10 +198,10 @@ transform: scale(1.05);
 .main-flower5{
   background-image:url("../images/pinkrose-bouquet2.jpg");
   background-size: cover;
-  width: 420px;
+  width: 372px;
   height: 400px;
   top: 500px;
-  left:-10px;
+  left: -52px;
   opacity: .7;
   position:absolute;
   z-index: 20000;
@@ -199,10 +210,10 @@ transform: scale(1.05);
 
 .introPic{
   background-image:url("../images/womantech-color.png");
-  top:150px;
+  top:133px;
   width: 300px;
   height: 300px;
-  margin-left:50px;
+  margin-left:17px;
   background-size: cover;
   padding-bottom: 50px;
   position:absolute;
@@ -235,20 +246,19 @@ transform: scale(1.05);
 }
 
 .dianeIntro{
-  border:black;
-  border-radius: 25px;
-  margin-left: 18px;
-/*  text-align: justify-all;*/
   top:100px;
-  left:304px;
-  font-size: 30px;
+  left:351px;
+  font-size: 26px;
   height: 200px;
-  width: 900px;
+  width: 52%;
+  text-align: center;
   position:absolute;
   z-index: 20000;
   flex direction: row;
   flex:2;
  }
+
+
 
 .typeIntro{
   overflow: hidden;
@@ -264,38 +274,89 @@ transform: scale(1.05);
   to { width: 100% ;}
 }
 
-.myname{
+/*.myname{
 margin-left: 165px;
+}*/
+
+.myname, .ptext{
+  text-align: center;
+  width: 100%;
 }
+
 .techboxhdg{
-height: 100px;
-width: 300px;
-margin-top: 105px;
-margin-left: 248px;
+height: 50px;
+width: 225px;
+margin-top: 50px;
+margin-left: 263px;
 font-family: arial;
 text-transform: uppercase;
 }
 
-.techbox {      /*styles area of in navbar container*/
+.tech-hdg{
+  width: 100%;
+  text-align: center;
+}
+
+.tech1:hover, .tech2:hover, .tech3:hover, .tech4:hover, .tech5:hover, 
+.tech6:hover, .tech7:hover, .tech8:hover, .tech9:hover, .tech10:hover, 
+.tech11:hover, .tech12:hover, .tech13:hover, .tech14:hover, .tech15:hover, a.c-link:hover{
+  -webkit-filter: grayscale(0%) sepia(0%) brightness(115%) /*invert(0%)*/ contrast(150%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(0%);
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(0%);
+  -o-transition: .5s ease-in-out;
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  /*overlay setup*/
+
+  /* Black background with opacity */
+    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+    cursor: pointer; /* Add a pointer on hover */
+  
+} 
+
+.tech1, .tech2, .tech3, .tech4, .tech5, 
+.tech6, .tech7, .tech8, .tech9, .tech10, 
+.tech11, .tech12, .tech13, .tech14, .tech15, a.c-link{
+  -webkit-filter: grayscale(38%) sepia(40%) /*invert(20%)*/ contrast(92%);
+  -webkit-transition: .5s ease-in-out;
+  -moz-filter: grayscale(100%); 
+  -moz-transition: .5s ease-in-out;
+  -o-filter: grayscale(100%); 
+  -o-transition: .5s ease-in-out; 
+}
+
+
+.techbox{      /*styles area of in navbar container*/
+    box-sizing: border-box;
+    border: solid 6px;
     height: 100vh;
     flex: 1;
-    width: 650px;
-    top: 480px;
-    left: 425px;
+    width: 800px;
+    top: 396px;
+    left: 336px;
     position: absolute;
 /*    background-color: rgba(17, 2, 33, 0.5);*/
     /*overflow-x: hidden; keeps the text from spilling into the navbar*/
     z-index: 100000;
     display: grid;
-    grid-template-columns: 135px 135px 135px 135px 135px;
-    grid-template-rows:135px 135px 135px;
-    grid-gap: 10px;
-
+    grid-template-columns: 18% 18% 18% 18% 18%;
+    grid-template-rows: 16% 16% 16%;
+    grid-gap: 1em;
 }
 
 .techbox img{
     height: 100%;
     width: 100%;
+}
+
+.tech1back{
+    background-color: black;
+    grid-row-start:1;  grid-row-end: 2;
+    grid-column-start: 1; grid-column-end: 2;
+    opacity: 1;
 }
 .tech1{
 /*    background-image: url('../images/tech-icons/CSS-trans.jpg');*/
@@ -380,8 +441,8 @@ text-transform: uppercase;
 }
 
 .contactInfo{
-  margin-top:100px;
-  margin-left: 375px;
+  margin-top:14px;
+  margin-left: 416px;
   /*height:auto;*/
   width:300px;
   padding: 150px;
@@ -551,19 +612,29 @@ text-align: center;
   justify-content: center;
   text-align: center;
   flex:1;
+  margin-left: 17px;
 }
 
 .contactbox {
-    width: 300px;
+    width: 380px;
     height: 500px;
     display:flex;
     flex-direction:column;
     align-items: center;
-    /*margin-left: 40px;*/
+    margin-left: -30px;
 }
 
 .c-link{
   display: block;
+}
+
+a.c-link:hover{
+  scale: 1.3.;
+}
+
+.p-link{
+  margin-top:104px;
+  width: 75px;
 }
 
 .contact-label{
@@ -635,9 +706,9 @@ text-align: center;
     background-image: url("../images/geo-building18.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-top: 260px;
+    margin-top: 161px;
     margin-left: 325px;
-    width: 700px;
+    width: 710px;
     height: 600px;
     /*display:flex;*/
     /*flex-direction:column;*/
@@ -647,11 +718,13 @@ text-align: center;
 
   }
 
-.emailtext{
+.emailfield{
   color: darkblue;
   font-weight: bold;
   font-size: 22px;
   font-family: arial;
+  display: inline-block;
+
 }
 
 .messagetext{
@@ -669,6 +742,11 @@ text-align: center;
     box-sizing: border-box;
     margin-left: 50px;
 }
+
+.emailreply{
+  margin-left: 50px;
+}
+
 
   input[type=submit]{
     width: 100px;
