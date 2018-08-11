@@ -130,3 +130,28 @@
             </tr>
           </tbody>
         </table>
+
+
+
+
+
+
+
+        <div class="techbox">
+<!--         <div class="tech1"><img src="../images/tech-icons/CSS-trans.jpg"></div> -->
+        <div class="hovering tech1back"> <div class="tech1 "><img src="images/tech-icons/CSS.png" alt="CSS"></div></div>
+        <div class="hovering tech2"><img src="images/tech-icons/HTML2.png" alt="HTML"></div>
+        <div class="hovering tech3"><img src="images/tech-icons/javascript-trans.png" alt="JavaScript"></div>
+        <div class="tech4"><img src="images/tech-icons/jquery.jpg"></div>
+        <div class="tech5"><img src="images/tech-icons/node-express-trans.jpg" alt="Node JS Express"></div>
+        <div class="tech6"><img src="images/tech-icons/reactjs-hex.jpg" alt="React JS"></div>
+        <div class="tech7"><img src="images/tech-icons/postgresql-trans.jpg" alt="Postgre SQL"></div>
+        <div class="tech8"><img src="images/tech-icons/rubyonrails.jpg" alt="Ruby on Rails"></div>
+        <div class="tech9"><img src="images/tech-icons/php-trans.png" alt="PHP"></div>
+        <div class="tech10"><img src="images/tech-icons/heroku.png" alt="Heroku"></div>
+        <div class="tech11"><img src="images/tech-icons/css-grid4.jpeg" alt="CSS Grid"></div>
+        <div class="tech12"><img src="images/tech-icons/git-color.jpg" alt="Git"></div>
+        <div class="tech13"><img src="images/tech-icons/flexbox-square.png" alt="CSS Flexbox"></div>
+        <div class="tech14"><img src="images/tech-icons/sublime2.jpg" alt="Sublime"></div>
+        <div class="tech15"><img src="images/tech-icons/babel.png" alt="Babel"></div>
+  </div>
