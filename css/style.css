@@ -128,9 +128,9 @@ transform: scale(1.05);
  }
 
 .main-bkgd2{
-  top:0px;
-  left: -.50px;
-  height:100vh;
+  top:-13vh;
+  left: 2.5vw;
+  height:105vh;
   width:100vw;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 27%, rgba(255, 255, 204,.7) 21%, rgba(255, 230, 255, .7) 70%);
   z-index: 1000;
@@ -516,12 +516,12 @@ margin-left: 263px;
 }
 
 .contactInfo{
-  margin-top:14px;
-  margin-left: 416px;
+  margin-top:5vh;
+  margin-left: 29.5vw;
   /*height:auto;*/
-  width:300px;
-  padding: 150px;
-  font-size: 17px;
+  width: 21vw;
+  padding: 17vw;
+  font-size: 2vmin;
   border-radius: 25px;
   color:black;
   background-image:url("../images/geo-building16.jpeg");
