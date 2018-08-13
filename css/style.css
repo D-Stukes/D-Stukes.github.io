@@ -17,6 +17,11 @@
   }
 }
 */
+
+
+/*Navigation Bar*/
+
+
 .navbox{
 /*  top:0;
   left:0;*/
@@ -112,6 +117,11 @@ transform: scale(1.05);
   font-family: arial;
  }
 
+
+
+/*Animated Background - bottom layer - used on all pages*/
+
+
 .main-bkgd1{
   height:100%;
   width:100%;
@@ -127,16 +137,21 @@ transform: scale(1.05);
   animation-fill-mode: forwards;
  }
 
+/* Gradient Backgrounds -top layers - used on all pages*/
+
 .main-bkgd2{
   top:-13vh;
-  left: 2.5vw;
-  height:105vh;
-  width:100vw;
+  left: -.5vw;
+  height: 108vh;
+  width: 102vw;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 27%, rgba(255, 255, 204,.7) 21%, rgba(255, 230, 255, .7) 70%);
   z-index: 1000;
-  position: relative;
+  /*position: relative;*/
   overflow: hidden;
   background-size: cover;
+  display:flex;
+  flex direction: column;
+  justify-content: center;
   }
 
 .main-bkgd3{
@@ -161,6 +176,9 @@ transform: scale(1.05);
     to {background-position: -180px 0px;}
 }
 
+
+
+/*Page One - About Me*/
 
 .main-flower{
   background-image:url("../images/roses-pale2.png");
@@ -208,7 +226,7 @@ transform: scale(1.05);
   background-size: cover;
   background-repeat: no-repeat;
   font-size: 4vmin;
-  width: 20.31vw;
+  width: 23.31vw;
   height: 55.5vh;
   top: 32vh;
   left: .1vw;
@@ -364,6 +382,8 @@ margin-left: 263px;
 
 }*/
 
+/*Page One - List of Technologies I have learned*/
+
 .tech-hdg{
   width: 100%;
   text-align: center;
@@ -515,25 +535,8 @@ margin-left: 263px;
     grid-column-start: 5; grid-column-end: 6;
 }
 
-.contactInfo{
-  margin-top:5vh;
-  margin-left: 29.5vw;
-  /*height:auto;*/
-  width: 21vw;
-  padding: 17vw;
-  font-size: 2vmin;
-  border-radius: 25px;
-  color:black;
-  background-image:url("../images/geo-building16.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: inline;
-  opacity: .6;
-  z-index: 10000;
-  position: absolute;
-  flex direction: row;
-  flex:2;
-}
+
+/*Page 2 - Projects*/
 
 .projects{
   top:75px;
@@ -698,12 +701,41 @@ text-align: center;
     background-color: blue;
 }
 
-.contacthdg{
-  top:100px;
+
+/*Page 3 - Contact Me*/
+
+.contactInfo{
+  /*margin-top:5vh;*/
+  /*margin-left: 27.5vw;*/
+  /*height:auto;*/
+  width: 12vw;
+  padding-left: 14.5vw;
+  padding-right: 18vw;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  font-size: 2vmin;
+  border-radius: 25px;
+  color:black;
+  background-image:url("../images/geo-building16.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*display: inline;*/
+  opacity: .6;
+  z-index: 10000;
+  /*position: absolute;*/
+  flex direction: column;
   justify-content: center;
+  align-content: center;
+}
+
+
+.contacthdg{
+  /*top:100px;*/
+  align-self: center;
   text-align: center;
-  flex:1;
-  margin-left: 17px;
+  /*flex:1;*/
+  /*margin-left: 17px;*/
+  width: 11em;
 }
 
 .contactbox {
@@ -711,8 +743,9 @@ text-align: center;
     height: 500px;
     display:flex;
     flex-direction:column;
-    align-items: center;
-    margin-left: -30px;
+    align-content: center;
+    justify-content: flex-start;
+   /* margin-left: -30px;*/
 }
 
 .c-link{
@@ -728,16 +761,27 @@ a.c-link:hover{
   width: 75px;
 }
 
-.contact-label{
-  width:100%;
-  height: 75px;
-  font-size: 20px;
+.contact-label1,.contact-label3{
+  height: 7vh;
+  font-size: 1.1em;
   font-weight: bolder;
-  text-align: center;
+  /*text-align: center;*/
   /*text-wrap: unrestricted;*/
   /*position: sticky;*/
-  align-self: center;
+ /* align-self: center;*/
 }
+
+.contact-label2{
+  height: 7vh;
+  font-size: 1.1em;
+  font-weight: bolder;
+  text-align: center;
+  margin-left: -11vw;
+  /*text-wrap: unrestricted;*/
+  /*position: sticky;*/
+ /* align-self: center;*/
+}
+
 
 .email{
   background-image:url("../images/gmail-icon.png");
@@ -751,7 +795,7 @@ a.c-link:hover{
   /*position:absolute;*/
   border: 5px solid;
   z-index: 20000;
-  flex:1;
+/*  flex:1;*/
  /* margin-left: 73px;*/
 }
 
@@ -761,15 +805,15 @@ a.c-link:hover{
     background-position: center;
     width: 200px;
     height: 100px;
-/*    top: 150px;
+/*  top: 150px;
     left: 300px;*/
     opacity: .9;
     /*position:absolute;*/
     border: 5px solid;
     z-index: 20000;
-    flex direction: row;
-    flex:1;
-    margin-left: 73px;
+/*  flex direction: row;
+    flex:1;*/
+    /*margin-left: 73px;*/
   }
 
   .github{
@@ -784,9 +828,9 @@ a.c-link:hover{
     /*position:absolute;*/
     border: 5px solid;
     z-index: 20000;
-    flex direction: row;
-    flex:1;
-    margin-left: 17px;
+/*  flex direction: row;
+    flex:1;*/
+   /* margin-left: 17px;*/
   }
 
   .emailhdg{
