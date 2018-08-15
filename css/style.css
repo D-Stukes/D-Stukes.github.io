@@ -227,7 +227,7 @@ transform: scale(1.05);
   background-repeat: no-repeat;
   font-size: 4vmin;
   width: 23.31vw;
-  height: 55.5vh;
+  height: 65.5vh;
   top: 32vh;
   left: .1vw;
 /*  width:290px;
@@ -245,8 +245,8 @@ transform: scale(1.05);
   background-size: cover;
   width: 32vw;
   height: 56vh;
-  top: 32vh;
-  left: -5.9vw;
+  top: 40vh;
+  left: -6.9vw;
   opacity: .7;
   position:absolute;
   z-index: 20000;
@@ -272,7 +272,7 @@ transform: scale(1.05);
   /*width: 300px;*/
   height: 8.5em;
   /*height: 300px;*/
-  margin-left: 8.22vw;
+  margin-left: 7.22vw;
   /*margin-left:17px;*/
   background-size: 87%;
   background-repeat: no-repeat;
@@ -292,45 +292,45 @@ large red gear*/
   height: 5.9em;
   width:3.8em;
   display:inline-block;*/
-  margin-top: 19px;
-  margin-left:66px;
-  height: 150px;
-  width:100px;
+  margin-top: 2vh;
+  margin-left:4.5vw;
+/*  height: 150px;
+  width:100px;*/
   display:inline-block;
 }
 
 /*dark-green gear*/
-.gear2{
-/*  margin-left:1.5em;
+/*.gear2{
+  margin-left:1.5em;
   height: 5.8em;
   width: 3.8em;
   margin-top: -6.8em;*/
-  margin-left:41px;
+/*  margin-left:41px;
   height: 150px;
   width:100px;
   margin-top: -161px;
-}
+}*/
 
 /*silver gear*/
-.gear3{
+/*.gear3{*/
 /*  margin-left:1.6em;
   height: 4.5em;
   width: 3.8em;
   margin-top: -9.8em;*/
-  margin-left:103px;
+/*  margin-left:103px;
   height: 103px;
   width:111px;
   margin-top: -214px;
-}
+}*/
 
 
 .dianeIntro{
   top: 1vh;
-  left: 10vw; /*10 times .1 of viewport width*/
+  left: 18vw; /*10 times .1 of viewport width*/
 /*  font-size: 26px; or 8.5em*/
   font-size: 3vmin;
   height: 10vh;
-  width: 78vw;
+  width: 62vw;
   text-align: center;
   position:absolute;
   z-index: 20000;
@@ -390,6 +390,7 @@ margin-left: 263px;
   height: 1em;
   font-family: arial;
   text-transform: uppercase;
+  margin-top: 5vh;
 }
 
 .tech1:hover, .tech2:hover, .tech3:hover, .tech4:hover, .tech5:hover, 
@@ -430,7 +431,7 @@ margin-left: 263px;
     height: 52vh;
     /*flex: 1;*/
     width: 53vw;
-    top: 24vh;
+    top: 40vh;
     left: 23.6vw;
     position: absolute;
 /*    background-color: rgba(17, 2, 33, 0.5);*/
@@ -787,8 +788,8 @@ a.c-link:hover{
   background-image:url("../images/gmail-icon.png");
   background-size: cover;
   background-position: center;
-  width: 200px;
-  height: 100px;
+  width: 10.5em;
+  height: 5em;
 /*  top: 150px;
   left: 30px;*/
   opacity: .9;
@@ -803,8 +804,8 @@ a.c-link:hover{
     background-image:url("../images/linkedin-icon-black.png");
     background-size: cover;
     background-position: center;
-    width: 200px;
-    height: 100px;
+    width: 10.5em;
+    height: 5em;
 /*  top: 150px;
     left: 300px;*/
     opacity: .9;
@@ -820,8 +821,8 @@ a.c-link:hover{
     background-image:url("../images/GitHub-Mark-120px-plus.png");
     background-size: cover;
     background-position: center;
-    width: 200px;
-    height: 100px;
+    width: 10.5em;
+    height: 5em;
 /*    top: 150px;
     left: 600px;*/
     opacity: .9;
