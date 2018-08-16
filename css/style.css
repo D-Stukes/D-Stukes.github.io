@@ -327,7 +327,7 @@ large red gear*/
   top: 1vh;
   left: 18vw; /*10 times .1 of viewport width*/
 /*  font-size: 26px; or 8.5em*/
-  font-size: 3vmin;
+  font-size: 2.63vmin;
   height: 10vh;
   width: 62vw;
   text-align: center;
@@ -369,7 +369,7 @@ height: 30em;
 .myname, .ptext{
   text-align: center;
   width: 100%;
-  margin:.15em;
+  margin:.07em;
   padding: 0;
 }
 
@@ -385,10 +385,11 @@ margin-left: 263px;
 .tech-hdg{
   width: 100%;
   text-align: center;
-  height: 1em;
+  height: .4em;
   font-family: arial;
   text-transform: uppercase;
   margin-top: 5vh;
+  font-size: 1.12em;
 }
 
 .tech1:hover, .tech2:hover, .tech3:hover, .tech4:hover, .tech5:hover, 
@@ -542,10 +543,11 @@ margin-left: 263px;
 .tech-hdgB{
   width: 100%;
   text-align: center;
-  height: 1em;
+  height: .4em;
   font-family: arial;
   text-transform: uppercase;
   margin-top: 5vh;
+  font-size: 1.12em;
 }
 
 .tech1-flex:hover, .tech2-flex:hover, .tech3-flex:hover, .tech4-flex:hover, .tech5-flex:hover, 
