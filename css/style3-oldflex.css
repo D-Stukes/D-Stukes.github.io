@@ -1,3 +1,4 @@
+
 /*
 * {
   box-sizing: border-box;
@@ -378,9 +379,10 @@ height: 50px;
 width: 225px;
 margin-top: 50px;
 margin-left: 263px;
+
 }*/
 
-/*Page One - List of Technologies I have learned - CSS Grid Version*/
+/*Page One - List of Technologies I have learned*/
 
 .tech-hdg{
   width: 100%;
@@ -534,70 +536,40 @@ margin-left: 263px;
     grid-column-start: 5; grid-column-end: 6;
 }
 
+/*Flexbox version of List of Technologies*/
 
-
-
-/*Page One - List of Technologies I have learned - CSS Flexbox Version*/
-
-.tech-hdgB{
-  width: 100%;
-  text-align: center;
-  height: 1em;
-  font-family: arial;
-  text-transform: uppercase;
-  margin-top: 5vh;
-}
-
-.tech1-flex:hover, .tech2-flex:hover, .tech3-flex:hover, .tech4-flex:hover, .tech5-flex:hover, 
-.tech6-flex:hover, .tech7-flex:hover, .tech8-flex:hover, .tech9-flex:hover, .tech10-flex:hover, 
-.tech11-flex:hover, .tech12-flex:hover, .tech13-flex:hover, .tech14-flex:hover, .tech15-flex:hover, a.c-link-flex:hover{
-  -webkit-filter: grayscale(0%) sepia(0%) brightness(115%) /*invert(0%)*/ contrast(150%);
-  -webkit-transition: .5s ease-in-out;
-  -moz-filter: grayscale(0%);
-  -moz-transition: .5s ease-in-out;
-  -o-filter: grayscale(0%);
-  -o-transition: .5s ease-in-out;
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
-  /*overlay setup*/
-
-  /* Black background with opacity */
-    z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
-  
-} 
-
-.tech1-flex, .tech2-flex, .tech3-flex, .tech4-flex, .tech5-flex, 
-.tech6-flex, .tech7-flex, .tech8-flex, .tech9-flex, .tech10-flex, 
-.tech11-flex, .tech12-flex, .tech13-flex, .tech14-flex, .tech15-flex, a.c-link{
+/*.tech1-flex, .tech2-flex, .tech3-flex, .tech4-flex, .tech5-flex, 
+.tech6, .tech7-fle, .tech8-flex, .tech9-flex, .tech10-flex, 
+.tech11, .tech12, .tech13, .tech14, .tech15{
   -webkit-filter: grayscale(38%) sepia(40%) /*invert(20%)*/ contrast(92%);
-  -webkit-transition: .5s ease-in-out;
+  /*-webkit-transition: .5s ease-in-out;
   -moz-filter: grayscale(100%); 
   -moz-transition: .5s ease-in-out;
   -o-filter: grayscale(100%); 
   -o-transition: .5s ease-in-out; 
 }
+*/
+/*.flexgrid{
+  font-size: 2vmin;
+  font-style: italic;
+  height: 1em;
+  width: 1em;
+}*/
 
-
-.techbox-flex{      /*styles area of in navbar container*/
-    /*box-sizing: border-box;*/
+.techbox-flex{  
     border: solid 6px;
     height: 52vh;
-    /*flex: 1;*/
     width: 53vw;
     top: 40vh;
     left: 23.6vw;
     position: absolute;
-/*    background-color: rgba(17, 2, 33, 0.5);*/
-    /*overflow-x: hidden; keeps the text from spilling into the navbar*/
     z-index: 100000;
     display: flex;
     flex-flow: row wrap;
     -webkit-justify-content: space-around;
-    /*-ms-flex-pack: space-around;*/ /* this seems to break my site!*/
+    -ms-flex-pack: space-around;
     justify-content: space-around;
-
+    
 }
 
 .techbox-flex img{
@@ -607,62 +579,64 @@ margin-left: 263px;
     height: 16vh;
 }
 
-
 .tech1-flex{
+/*    background-image: url('../images/tech-icons/CSS-trans.jpg');*/
+}
 
-}
 .tech2-flex{
-   
+    /*background-image: url('HTML2.png');*/
 }
+
 .tech3-flex{
-    
+    /*background-image: url('../images/tech-icons/javascript-trans.png');*/
 }
+
 .tech4-flex{
-  
+    /*background-image: url('../images/tech-icons/jquery.jpg');*/
 }
 
 .tech5-flex{
-  
+    /*background-image: url('../images/tech-icons/node-express-trans.jpg');*/
 }
 
 .tech6-flex{
-    
+    /*background-image: url('../images/tech-icons/reactjs-hex.jpg');*/
 }
 
 .tech7-flex{
-   
+    /*background-image: url('../images/tech-icons/postgresql-trans.jpg');*/
 }
+
 .tech8-flex{
-   
+    /*background-image: url('../images/tech-icons/git-color.jpg');*/
 }
+
 .tech9-flex{
- 
+    /*background-image: url('../images/tech-icons/php-trans.png');*/
 }
+
 .tech10-flex{
+    /*background-image: url('../images/tech-icons/flexbox-square.png');*/
 }
 
 .tech11-flex{
-
+    /*background-image: url('../images/tech-icons/sublime2.jpg');*/
 }
+
 .tech12-flex{
-
-
+    /*background-image: url('../images/tech-icons/grid.jpg');*/
 }
 .tech13-flex{
-    
+    /*background-image: url('../images/tech-icons/rubyonrails.jpg');*/
 }
+
 .tech14-flex{
-    
-    
+    /*background-image: url('../images/tech-icons/jquery.jpg');*/
 }
 
 .tech15-flex{
-   
+    /*background-image: url('../images/tech-icons/material-UI.png');*/
 }
-
-
-
-
 
 
 /*Page 2 - Projects*/

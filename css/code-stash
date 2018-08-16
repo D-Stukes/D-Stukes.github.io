@@ -155,3 +155,5 @@
         <div class="tech14"><img src="images/tech-icons/sublime2.jpg" alt="Sublime"></div>
         <div class="tech15"><img src="images/tech-icons/babel.png" alt="Babel"></div>
   </div>
+
+<br/> <a class="target flexgrid" href="index-grid.html">(Click to view in CSS GRID)</a>
