@@ -1020,8 +1020,7 @@ a.c-link:hover{
     width: 2vw;
     height: 5vh;
     color:blue;
-/*  left:10vw;
-    margin-left: 10.3vw;*/
+    margin-left: 2.5em;
     padding: 1vw 6vh;
     margin: 1.3vw 0;
     box-sizing: border-box;
