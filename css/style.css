@@ -1017,14 +1017,15 @@ a.c-link:hover{
 
 
   input[type=submit]{
-    width: 2vw;
+    width: 9vw;
     height: 5vh;
     color:blue;
     margin-left: 2.5em;
-    padding: 1vw 6vh;
-    margin: 1.3vw 0;
+    margin: 1.3vw 4.2vw;
     box-sizing: border-box;
     border: gray 2px;
+    font-weight: bold;
+    font-size: 1.25em;
 }
 
 
